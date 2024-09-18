@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inknut Antiqua', serif; /* Aplicamos la nueva tipografía */
+    background-color: #f4e5c2;
+}
+
+header {
+    padding: 10px 0;
+}
+
+.fondoMenu {
+    background-color: #5F6F52;
+}
+
+.fondoMenu2 {
+    background-color: #D6B392;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info {
+    color: #ffffff;
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-end; /* Mueve el contenido hacia la derecha */
+    width: 100%; /* Se asegura de ocupar el ancho completo del contenedor */
+}
+
+.contact-info i {
+    margin-right: 5px;
+}
+
+
+.logo img {
+    height: 80px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #8e745a;
+    border-bottom: 2px solid #8e745a;
+}
+
+.contact-info {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.contact-info i {
+    margin-right: 5px;
+}
+
+/* Nueva sección debajo del menú */
+.new-section {
+    background-color: #e5d3b3; /* Color de fondo diferente */
+    text-align: center;
+}
+
+.new-section h2 {
+    font-size: 32px;
+    color: #5F6F52;
+}
+
+.new-section p {
+    font-size: 20px;
+    color: #8e745a;
+}
+.w-100 {
+    width: 100% !important;
+    height: 590px;
+}
+
+/* Estilos para la sección de Qué Nos Diferencia */
+.diferencia-section {
+    background-color: #f9f3e6;
+    color: #5f6f52;
+    font-family: 'Inknut Antiqua', serif;
+}
+
+.diferencia-section h2 {
+    font-size: 36px;
+    color: #5f6f52;
+    margin-bottom: 30px;
+    font-weight: bold;
+    border-bottom: 2px solid #5f6f52;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.diferencia-item {
+    margin-bottom: 30px;
+}
+
+.diferencia-item h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #5f6f52;
+    border-bottom: 1px solid #5f6f52;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.diferencia-item p {
+    font-size: 16px;
+    color: #8e745a;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.diferencia-img {
+    border-radius: 50%;
+    background-color: #f1ece2;
+    padding: 30px;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .diferencia-section h2 {
+        font-size: 28px;
+    }
+    
+    .diferencia-item h3 {
+        font-size: 20px;
+    }
+    
+    .diferencia-item p {
+        font-size: 14px;
+    }
+}
