@@ -73,7 +73,7 @@ nav ul li a.active {
 .differentiators {
     text-align: center;
     padding: 50px 20px;
-    background-color: #f8f5f0;
+    background-color: #fefae0;
 }
 
 .differentiators h2 {
@@ -130,8 +130,3 @@ nav ul li a.active {
     color: #555;
 }
 
-.differentiators {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #fefae0;
-}
