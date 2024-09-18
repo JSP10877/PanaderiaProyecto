@@ -6,8 +6,13 @@
 
 body {
     font-family: 'Inknut Antiqua', serif; /* Aplicamos la fuente Inknut Antiqua */
-    line-height: 1.6;
+    /* line-height: 1.6; */
     background-color: #FEFAE0;
+}
+.fondo1 {
+    background-color: #5F6F52; 
+    margin-bottom: -40px;
+    text-align: right; /* Esto alinea el texto a la derecha */
 }
 
 header {
