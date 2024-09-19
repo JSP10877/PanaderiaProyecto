@@ -15,25 +15,27 @@
     <link rel="stylesheet" href="/css/nosotros.css">
 </head>
 
-<body>
-    <div class="schedule fondo1">
-        <p style="color: rgb(255, 255, 255); margin-right: 20px;">Lunes - Sábado / 6:30 - 21:00</p>
+<body style="background-color: #fefae0 ;"> <!--Con el "Background-color cambiamos el fondo del cuerpo"-->
+    <div class="banner1"> <!--Cramos un Div para hacer el banner superior-->
+        <p style="color: white; margin-right: 20px; font-size: 14px; font-family: Arial;">Lunes - Sábado / 6:30 - 21:00</p> 
     </div>
-    <br>
-    <header>
-        <div class="logo">
+    <br> <!--Este br es importante ya que crea el espacio entre el banner y el menú, sinó el menú se superpondria al banner-->
+    <header> <!--Creamos el header para hacer el banner del menú-->
+        <div class="logo"> <!--Agregamos el logo dentro del header con los parametros especificos en la css-->
             <img src="/imagenes(General)/Logopanaderia.png" alt="Logo Panadería Latin Express">
         </div>
-        <nav style="margin-right: 20px;">
-            <ul>
-                <li><a href="/html/index.html">Inicio</a></li> <!-- Aquí se añade la clase 'active' -->
-                <li><a href="/html/nototros.html" class="active">Nosotros</a></li>
+        <nav style="margin-right: 50px;"> <!--El "nav" es para indicar que el bloque de codigo es una barra de navegación-->
+            <ul> <!--Creamos una lista desordenada-->
+                <li><a href="/html/index.html" class="active">Inicio</a></li> <!-- Aquí se añade la clase 'active' para indicar que este es el enlace activo o la página en la que se encuentra el usuario actualmente. -->
+                <li><a href="/html/nototros.html">Nosotros</a></li>
                 <li><a href="#">Establecimiento</a></li>
                 <li><a href="#">Productos</a></li>
                 <li><a href="#">Contáctanos</a></li>
             </ul>
         </nav>
     </header>
+
+<!--_____________________-Aquí comienza la parte propia de la pagina____________-->
 
     <section class="differentiators">
         <h2>sobre nosotros</h2>
