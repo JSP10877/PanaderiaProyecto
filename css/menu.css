@@ -88,33 +88,37 @@ nav ul li a.active { /* Rayita debajo de la seccion en la que se encuentra actua
 }
 
 .diferenciador h2::after {
-    content: '';
-    display: block;
-    width: 400px; /* Ancho de la línea */
-    height: 3px; /* Grosor de la línea */
-    background-color: #3d3d3d; /* Color de la línea */
-    margin: 10px auto 0; /* Espaciado hacia abajo */
-}
-
-.diferenciador h2, 
-.diferenciador .feature h3, 
-.diferenciador .feature p {
-    color: #4B5940;
+    content: ''; /* Crea un elemento vacío después del <h2> */
+    display: block; /* Hace que el pseudo-elemento sea un bloque, lo que le permite ocupar toda la línea horizontal */
+    width: 400px; /* Define el ancho de la línea, en este caso 400px */
+    height: 3px; /* Establece la altura de la línea, lo que la convierte en una línea delgada de 3px */
+    background-color: #3d3d3d; /* Asigna un color gris oscuro a la línea */
+    margin: 10px auto 0; /* Añade un margen superior de 10px, luego centra la línea horizontalmente con `auto` y no añade margen en la parte inferior */
 }
 
 
-.features {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+
+.mejoras {
+    display: flex; /* Activa Flexbox para los elementos hijos del contenedor */
+    justify-content: space-around; /* Distribuye los elementos con espacio alrededor de ellos */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a la siguiente línea si no caben en una sola */
 }
 
-.feature {
+.mejora { /* parametro general para la clase mejora*/
     width: 250px;
     text-align: center;
 }
 
-.feature img {
+
+.diferenciador h2, 
+.diferenciador .mejora h3, 
+.diferenciador .mejora p { /*Cambio de color de forma mas rapida para el texto de esta seccion*/
+    color: #4B5940;
+    
+}
+
+
+.mejora img {
     width: 200px;
     margin-bottom: 20px;
     border-radius: 50%; /* Hacer las imágenes circulares */
@@ -123,13 +127,7 @@ nav ul li a.active { /* Rayita debajo de la seccion en la que se encuentra actua
     border: 2px solid #4B5940; /* Borde para la imagen */
 }
 
-.feature h3 {
+.mejora h3 { /*Parametros de los titulos de cada "diferencia"*/
     font-size: 24px;
     margin-bottom: 15px;
 }
-
-.feature p {
-    font-size: 16px;
-    color: #555;
-}
-
