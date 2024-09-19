@@ -1,90 +1,93 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Eliminamos margenes por defecto del navegador*/
+    padding: 10; /*Agregamos un relleno de 10 unidades para que los elementos tenga un espacio de 1o pixeles*/ 
+    box-sizing: border-box; /*Esto asegura que el tamaño de un elemento incluya el relleno y el borde dentro de las dimensiones definidas*/
 }
+
 
 body {
     font-family: 'Inknut Antiqua', serif; /* Aplicamos la fuente Inknut Antiqua */
     /* line-height: 1.6; */
     background-color: #FEFAE0;
 }
-.fondo1 {
+.banner1 { /* Aquí acomodamos los parametros del banner superior*/
     background-color: #5F6F52; 
     margin-bottom: -40px;
     text-align: right; /* Esto alinea el texto a la derecha */
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /*modelo de caja flexible (flexbox) para el elemento header. Esto permite alinear y distribuir los elementos hijos (por ejemplo, el logo y el menú de navegación) de manera más controlada y adaptable.*/
+    justify-content: space-between; /*Distribuye los elementos hijos dentro del header de tal forma que haya espacio entre ellos. El primer hijo (como el logo) se alineará a la izquierda, y el último hijo (como el menú de navegación) a la derecha, dejando el espacio sobrante entre ambos.*/
+    align-items: center; /* Con esto nos aseguramos de que las letras queden centradas, ni muy alto, ni muy bajo*/
     background-color: #D6B392;
 }
 
-header .logo img {
+header .logo img { /*En esta parte es super importante el "img" ya que especificamos que el estilo se aplica a la imagen*/
     width: 100px;
+    margin-left: 10px;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 50px;
+nav ul { /*al agregar el "nav" especificamos que el "ul" dentro de este elemento se modifique mediante este css*/
+    list-style: none; /*Eliminamos el diseño por defecto de una lista*/
+    display: flex; /*Convierte el contenedor <ul> en un contenedor flexible (flex container), lo que permite su diseño vertical*/
+    gap: 50px; /*Espacios entre las opciones del menú*/
 }
 
-nav ul li a {
+nav ul li a { /*CSS para modificar los parametros esteticos de las secciones del menú*/
     text-decoration: none;
     color: #4b5940;
     font-size: 18px;
 }
-nav ul li a.active {
+
+nav ul li a.active { /* Rayita debajo de la seccion en la que se encuentra actualmente el usuario (active)*/
     border-bottom: 2px solid #4b5940; /* Color y grosor de la línea */
     padding-bottom: 5px; /* Espaciado entre el texto y la línea */
 }
 
 
-.schedule {
-    font-size: 14px;
-    color: #6b705c;
-}
+/*______________________________________________-En esta parte hacia abajo comienza lo mio-___________________*/
 
-.hero {
+
+.vistap {
     position: relative;
     text-align: center;
 }
 
-.hero img {
+.vistap img {
     width: 100%;
-    height: 550px;
-    /* opacity: 0.7; */
+    height: 550px;   
+    object-fit: cover;
 }
 
-.hero .hero-text {
+.vistap .vistap_text h1 {
+    margin: 0; /* Elimina márgenes innecesarios */
+    white-space: nowrap; /* Evita el salto de línea en el texto */
+    font-size: 78px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /* Ajusta el texto para estar en el centro tanto vertical como horizontalmente */
     color: white;
-    font-size: 48px;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra del texto */
+    text-align: center; /* Alinea el texto al centro del contenedor */
 }
 
-.differentiators {
+
+.diferenciador {
     text-align: center;
     padding: 50px 20px;
     background-color: #fefae0;
 }
 
-.differentiators h2 {
+.diferenciador h2 {
     font-size: 32px;
     margin-bottom: 40px;
     text-transform: uppercase; /* Convertir el texto a mayúsculas */
-    position: relative;
     display: inline-block;
 }
 
-.differentiators h2::after {
+.diferenciador h2::after {
     content: '';
     display: block;
     width: 400px; /* Ancho de la línea */
@@ -93,9 +96,9 @@ nav ul li a.active {
     margin: 10px auto 0; /* Espaciado hacia abajo */
 }
 
-.differentiators h2, 
-.differentiators .feature h3, 
-.differentiators .feature p {
+.diferenciador h2, 
+.diferenciador .feature h3, 
+.diferenciador .feature p {
     color: #4B5940;
 }
 

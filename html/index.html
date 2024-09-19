@@ -4,29 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latin Express</title>
-    <link rel="icon" href="/imagenes(General)/Logopanaderia.png" type="image/x-icon">
+    <title>Latin Express</title> <!-- Titulo pestaña superior-->
+    <link rel="icon" href="/imagenes(General)/Logopanaderia.png"> <!--Link para poner un pequeño icono al lado del titulo-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> <!--Invocamos Bootstrap Link 1-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/menu.css">
+        crossorigin="anonymous"></script> <!--Invocamos Bootstrap Link 2-->
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;700&display=swap" rel="stylesheet"> <!--Invocamos la fuente Inknut desde google fonts-->
+    <link rel="stylesheet" href="/css/menu.css"> <!--Invocamos la hoja de estilos que creamos-->
 </head>
 
-<body style="background-color: #fefae0 ;">
-    <div class="schedule fondo1">
-        <p style="color: white; margin-right: 20px;">Lunes - Sábado / 6:30 - 21:00</p>
+<body style="background-color: #fefae0 ;"> <!--Con el "Background-color cambiamos el fondo del cuerpo"-->
+    <div class="banner1"> <!--Cramos un Div para hacer el banner superior-->
+        <p style="color: white; margin-right: 20px; font-size: 14px; font-family: Arial;">Lunes - Sábado / 6:30 - 21:00</p> 
     </div>
-    <br>
-    <header>
-        <div class="logo">
+    <br> <!--Este br es importante ya que crea el espacio entre el banner y el menú, sinó el menú se superpondria al banner-->
+    <header> <!--Creamos el header para hacer el banner del menú-->
+        <div class="logo"> <!--Agregamos el logo dentro del header con los parametros especificos en la css-->
             <img src="/imagenes(General)/Logopanaderia.png" alt="Logo Panadería Latin Express">
         </div>
-        <nav style="margin-right: 20px;">
-            <ul>
-                <li><a href="/html/index.html" class="active">Inicio</a></li> <!-- Aquí se añade la clase 'active' -->
+        <nav style="margin-right: 50px;"> <!--El "nav" es para indicar que el bloque de codigo es una barra de navegación-->
+            <ul> <!--Creamos una lista desordenada-->
+                <li><a href="/html/index.html" class="active">Inicio</a></li> <!-- Aquí se añade la clase 'active' para indicar que este es el enlace activo o la página en la que se encuentra el usuario actualmente. -->
                 <li><a href="/html/nototros.html">Nosotros</a></li>
                 <li><a href="#">Establecimiento</a></li>
                 <li><a href="#">Productos</a></li>
@@ -35,14 +35,14 @@
         </nav>
     </header>
 
-    <section class="hero">
-        <img src="/imagenes(General)/baner1.jpg" alt="Croissants" width="100%" height="40px">
-        <div class="hero-text">
-            <h1>PANADERÍA <br> LATIN EXPRESS</h1>
+    <section class="vistap"> <!--Cramos una seccion con "section" en la que estará la imagen y el texto nomas-->
+        <img src="/imagenes(General)/baner1.jpg" alt="Croissant">
+        <div class="vistap_text">
+            <h1>PANADERÍA <br>LATIN EXPRESS</h1> <!--Acomodamos el texto en el centro-->
         </div>
     </section>
 
-    <section class="differentiators">
+    <section class="diferenciador"> <!--Creamos otra seccion para las cosas que nos diferencian-->
         <h2>Qué nos diferencia</h2>
         <div class="features">
             <div class="feature">
