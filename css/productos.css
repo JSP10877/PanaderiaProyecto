@@ -1,12 +1,12 @@
-/*_________este codigo dejarlo sano, son parametros de img____*/
+/* MEDIDAS DE LOS BLOQUES DE PRODUCTOS*/
+.container {
+   max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-    .container {
-        max-width: 900px;
-        margin: 0 auto;
-        padding: 0 20px;
-    }
 /*____________________________--Partes del menú-____________*/
-    * {
+* {
     margin: 0; /* Eliminamos margenes por defecto del navegador*/
     padding: 10; /*Agregamos un relleno de 10 unidades para que los elementos tenga un espacio de 1o pixeles*/ 
     box-sizing: border-box; /*Esto asegura que el tamaño de un elemento incluya el relleno y el borde dentro de las dimensiones definidas*/
@@ -55,86 +55,60 @@
     }
 
     /*------------PARTE PROPIA DE SU PAGINA-----------*/
-    h1 {
-        text-align: center;
-        color: #5d6d4f;
-        margin-bottom: 30px;
-    }
-    .intro-text {
-        text-align: center;
-        max-width: 800px;
-        margin: 0 auto 40px;
-        font-style: italic;
-        font-size: 18px;
-    }
-    .about-content {
-        display: flex;
-        align-items: flex-start;
-        gap: 40px;
-    }
-    .about-image {
-        flex: 1;
-        max-width: 50%;
-    }
-    .about-image img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-    }
-    .about-text {
-        flex: 1;
-        font-size: 20px;
-    }
     
-    /*Nuestro footer*/
-
-    footer {
-        background-color: #5F6F52; /* Color de fondo basado en la imagen */
-        padding: 20px 40px;
-        display: flex;
-        justify-content: space-between; /* Alinear logo a la izquierda y los íconos a la derecha */
-        align-items: center;
-        color: white;
-    }
-    
-    footer .footer-logo {
-        display: flex;
-        align-items: center;
-        font-family: 'Cinzel', serif; /* Fuente estilizada similar */
-        font-size: 36px; /* Ajusta el tamaño del texto */
-        font-weight: bold;
-    }
-    
-    footer .footer-logo::after {
-        content: '';
-        display: block;
-        width: 2px;
-        height: 70px;
-        background-color: white;
-        margin-left: 20px; /* Espacio entre texto y la línea */
-    }
-    
-    footer .footer-icons {
-        display: flex;
-        gap: 20px; /* Espacio entre íconos */
-    }
-    
-    footer .footer-icons a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 50px;
-        height: 50px;
-        border: 2px solid white;
-        border-radius: 50%; /* Hacer que los íconos tengan forma de círculo */
-        color: white;
-        font-size: 24px;
-        text-decoration: none;
-        transition: background-color 0.3s ease, color 0.3s ease;
-    }
-    
-    footer .footer-icons a:hover {
-        background-color: white;
-        color: #5F6F52; /* Cambiar color al fondo verde al pasar el ratón */
-    }
-    
+h1 {
+    text-align: center;
+    color: #5d6d4f;
+}
+.product-categories {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.category-button {
+    background-color: #bd9776;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.product {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.product-image {
+    width: 150px;
+    height: 150px;
+    background-color: #d1c6b0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+.product-info {
+    flex-grow: 1;
+}
+footer {
+    background-color: #5d6d4f;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.social-icons {
+    margin-top: 10px;
+}
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}

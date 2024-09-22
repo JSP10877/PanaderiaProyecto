@@ -3,135 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panadería Latin Express</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fefae0;
-        }
-        .container {
-           max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        header {
-            background-color: #5d6d4f;
-            color: white;
-            padding: 3px 0;
-        }
-        .top-bar {
-            display: flex;
-            justify-content: right;
-            align-items: center;
-        }
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .banner_Superior {
-            font-size: 12px;
-        }
-        nav {
-            background-color: #D6B392;
-            padding: 10px 0;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: right;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: #5f6f52;
-            text-decoration: none;
-        }
-        main {
-            padding: 20px 0;
-        }
-        h1 {
-            text-align: center;
-            color: #5d6d4f;
-        }
-        .product-categories {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
-        .category-button {
-            background-color: #bd9776;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            margin: 0 10px;
-            cursor: pointer;
-        }
-        .products {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-        }
-        .product {
-            display: flex;
-            align-items: center;
-            background-color: white;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        .product-image {
-            width: 150px;
-            height: 150px;
-            background-color: #d1c6b0;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-right: 15px;
-        }
-        .product-info {
-            flex-grow: 1;
-        }
-        footer {
-            background-color: #5d6d4f;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        .social-icons {
-            margin-top: 10px;
-        }
-        .social-icons img {
-            width: 30px;
-            height: 30px;
-            margin: 0 10px;
-        }
-    </style>
+    <title>Panadería Latin Express - Sobre Nosotros</title>
+    <link rel="icon" href="/imagenes(General)/Logopanaderia.png"
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts: Inknut Antiqua -->
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Hoja de estilos personalizada -->
+    <link rel="stylesheet" href="/css/productos.css"
+
 </head>
-<body>
-    <header>
-        <div class="container">
-            <div class="top-bar">
-                <div class="logo"></div>
-                <div class="banner_Superior">Lunes - Sábado / 6:30 - 21:00</div>
-            </div>
+<body style="background-color: #fefae0 ;"> <!--Con el "Background-color cambiamos el fondo del cuerpo"-->
+    <div class="banner1"> <!--Cramos un Div para hacer el banner superior-->
+        <p style="color: white; margin-right: 20px; font-size: 14px; font-family: Arial;">Lunes - Sábado / 6:30 - 21:00</p> 
+    </div>
+    <br> <!--Este br es importante ya que crea el espacio entre el banner y el menú, sinó el menú se superpondria al banner-->
+    <header> <!--Creamos el header para hacer el banner del menú-->
+        <div class="logo"> <!--Agregamos el logo dentro del header con los parametros especificos en la css-->
+            <img src="/imagenes(General)/Logopanaderia.png" alt="Logo Panadería Latin Express">
         </div>
-    </header>
-    
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#establecimiento">Establecimiento</a></li>
+        <nav style="margin-right: 50px;"> <!--El "nav" es para indicar que el bloque de codigo es una barra de navegación-->
+            <ul> <!--Creamos una lista desordenada-->
+                <li><a href="/html/index.html">Inicio</a></li> <!-- Aquí se añade la clase 'active' para indicar que este es el enlace activo o la página en la que se encuentra el usuario actualmente. -->
+                <li><a href="/html/Nosotros.html">Nosotros</a></li>
+                <li><a href="#">Establecimiento</a></li>
+                <li><a href="/html/Productos.html" class="active">Productos</a></li>
+                <li><a href="#">Contáctanos</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
+    <br> 
     
     <main class="container">
         <h1>NUESTRA MERCANCÍA</h1>
