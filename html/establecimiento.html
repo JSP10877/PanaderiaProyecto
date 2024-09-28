@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panadería Latin Express - Sobre Nosotros</title>
     <link rel="icon" href="/imagenes(General)/Logopanaderia.png">
+
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <!-- Google Fonts: Inknut Antiqua -->
     <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;700&display=swap" rel="stylesheet">
@@ -23,58 +23,63 @@
     <link rel="stylesheet" href="/css/nosotros.css">
 </head>
 
-<body style="background-color: #fefae0 ;"> <!--Con el "Background-color cambiamos el fondo del cuerpo"-->
-    <div class="banner1"> <!--Cramos un Div para hacer el banner superior-->
-        <p style="color: white; margin-right: 20px; font-size: 14px; font-family: Arial;">Lunes - Sábado / 6:30 - 21:00</p> 
+<body style="background-color: #fefae0;">
+    <div class="banner1">
+        <p style="color: white; margin-right: 20px; font-size: 14px; font-family: Arial;">
+            Lunes - Sábado / 6:30 - 21:00
+        </p>
     </div>
-    <br> <!--Este br es importante ya que crea el espacio entre el banner y el menú, sinó el menú se superpondria al banner-->
-    <header> <!--Creamos el header para hacer el banner del menú-->
-        <div class="logo"> <!--Agregamos el logo dentro del header con los parametros especificos en la css-->
+    <br>
+    <header>
+        <div class="logo">
             <img src="/imagenes(General)/Logopanaderia.png" alt="Logo Panadería Latin Express">
         </div>
-        <nav style="margin-right: 50px;"> <!--El "nav" es para indicar que el bloque de codigo es una barra de navegación con enlaces-->
-            <ul> <!--Creamos una lista desordenada-->
-                <li><a href="/html/index.html">Inicio</a></li> <!-- Aquí se añade la clase 'active' para indicar que este es el enlace activo o la página en la que se encuentra el usuario actualmente. -->
+        <nav style="margin-right: 50px;">
+            <ul>
+                <li><a href="/html/index.html">Inicio</a></li>
                 <li><a href="/html/productos_dulce.html">Productos</a></li>
-                <li><a href="/html/Nosotros.html">Nosotros</a></li> <!--El "a" permite crear un enlace a otras paginas web-->
+                <li><a href="/html/Nosotros.html">Nosotros</a></li>
                 <li><a href="/html/establecimiento.html" class="active">Establecimiento</a></li>
             </ul>
         </nav>
     </header>
-    
+    <!--Parte de la pagina de Mendez-->
     <main class="container">
-        <br>
-        <br>
-        <h4 style="text-align: center;color: #5d6d4f; margin-bottom: 30px;"> DONDE NOS ENCUENTRAN </h4>
-        <p class="intro-text">El negocio está en una casa de dos pisos, con la panadería en el primero. Aquí, las vitrinas exhiben panes clasificados en sal y dulce. Afuera, hay un espacio con sillas y mesas para quienes deseen comer en el lugar o llevar su compra.</p>
+        <br><br>
+
+        <h4 style="text-align: center; color: #5d6d4f; margin-bottom: 30px;">DONDE NOS ENCUENTRAN</h4>
+        <p class="intro-text">
+            El negocio está en una casa de dos pisos, con la panadería en el primero. Aquí, las vitrinas exhiben panes clasificados en sal y dulce. Afuera, hay un espacio con sillas y mesas para quienes deseen comer en el lugar o llevar su compra.
+        </p>
+
+        <div class="about-content">
+            <div class="about-image left-image">
+                <img src="/imagenes(General)/foto_lejos.jpg" alt="Imagen uno del local">
+            </div>
+            <div class="about-image right-image">
+                <img src="/imagenes(General)/Foto_cerca.jpg" alt="Imagen dos del local">
+            </div>
+        </div>
+        
+        
+            <div class="about-text">
+                <h2>Nuestros horarios de atención son:</h2>
+                <p>
+                    Lunes- Sábado / 6:30 - 21:00 <br>
+                    Domingo / 7:00 - 21:00 <br><br>
+                    Dirección: Calle 16 Sur #17-21 B/Timanco, Neiva, Colombia <br><br>
+                    Teléfono: 3157142366
+                </p>
+            </div>
+        </div>
+
         <div class="about-content">
             <div class="about-image">
-                <img src="/imagenes(General)/foto_lejos.jpg" alt="Imagen uno del local">
-        
-                <div class="about-content">
-                    <div class="about-image">
-                        <img src="/imagenes(General)/Foto_cerca.jpg" alt="Imagen dos del local">
-            </div>
-            <div class="about-text">
-                <h2>Nuestros horarios de antencion son:</h2>
-                <p> 
-                   Lunes- Sabado/ 6:30-21:00
-                    
-                    Domingo/ 7:00-21:00
-                    
-                    Direccion:
-                    Calle 16 Sur #17-21 B/Timanco, Neiva, Colombia
-                    
-                    Telefono: 
-                    3157142366
-                    </p>
-                    <div class="about-content">
-                        <div class="about-image">
-                            <img src="/imagenes(General)/foto_lejos.jpg" alt="Ubicación en el mapa">
+                <img src="/imagenes(General)/foto_lejos.jpg" alt="Ubicación en el mapa">
             </div>
         </div>
     </main>
-    
+
     <footer>
         <div class="footer-logo">
             PANADERÍA <br> LATIN EXPRESS
@@ -86,6 +91,7 @@
             <a href="#"><i class="fas fa-map-marker-alt"></i></a>
         </div>
     </footer>
-    
+
 </body>
+
 </html>

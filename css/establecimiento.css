@@ -68,20 +68,40 @@
         margin: 0 auto 40px;
         font-style: italic;
     }
+    
+    /*Revise esto*/
+
     .about-content {
-        display: flex;
-        align-items: flex-start;
+        display: flex;            /* Utiliza flexbox para alinear los elementos */
+        justify-content: space-between; /* Distribuye las imágenes hacia los extremos izquierdo y derecho */
+        align-items: center;      /* Centra verticalmente las imágenes */
         gap: 40px;
     }
+    
     .about-image {
         flex: 1;
-        max-width: 50%;
+        max-width: 45%;           /* Limita el ancho de cada imagen para que ambas quepan en la misma fila */
     }
+    
     .about-image img {
         width: 100%;
         height: auto;
         border-radius: 10px;
     }
+    
+    .about-image.left-image {
+        flex: 0.4;                /* Define un tamaño menor para la imagen izquierda */
+        max-width: 30%;           /* Establece un ancho máximo específico para la imagen izquierda */
+    }
+    
+    .right-image {
+        flex: 1;                  /* Mantén la imagen derecha ocupando más espacio */
+        max-width: 45%;           /* Ajusta el ancho máximo según prefieras */
+    }
+    
+    /*revise esto*/
+
+    
     .about-text {
         flex: 1;
     }
