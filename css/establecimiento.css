@@ -79,14 +79,14 @@
     }
     
     .about-image {
-        flex: 1;
-        max-width: 45%;           /* Limita el ancho de cada imagen para que ambas quepan en la misma fila */
+        width: 100%; /* Asegura que las imágenes llenen el contenedor */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    max-width: 400px; /* Ajusta el tamaño máximo de las imágenes "cerca" y "lejos" */
+    border-radius: 10px;
     }
     
-    .about-image img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
+    .about-image img.map-image {
+        max-width: 600px; /* Aumenta el tamaño de la imagen del mapa */
     }
     
     .about-image.left-image {
@@ -95,8 +95,18 @@
     }
     
     .right-image {
-        flex: 1;                  /* Mantén la imagen derecha ocupando más espacio */
-        max-width: 45%;           /* Ajusta el ancho máximo según prefieras */
+        flex: 0.4;                  /* Mantén la imagen derecha ocupando más espacio */
+        max-width: 30%;           /* Ajusta el ancho máximo según prefieras */
+    }
+    
+    .location-title {
+        font-size: 3.5rem; /* Ajusta el tamaño del título */
+        font-weight: bold; /* Opción para hacer el texto más grueso */
+    }
+    
+    .location-text {
+        font-size: 1.75rem; /* Ajusta el tamaño del texto */
+        line-height: 1.8; /* Para mejorar la legibilidad del texto */
     }
     
     /*revise esto*/
@@ -157,4 +167,4 @@
         background-color: white;
         color: #5F6F52; /* Cambiar color al fondo verde al pasar el ratón */
     }
-    
+ 
