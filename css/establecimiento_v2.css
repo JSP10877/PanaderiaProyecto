@@ -1,0 +1,175 @@
+/*_________este codigo dejarlo sano, son parametros de img____*/
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+/*____________________________--Partes del menú-____________*/
+* {
+margin: 0; /* Eliminamos margenes por defecto del navegador*/
+padding: 10; /*Agregamos un relleno de 10 unidades para que los elementos tenga un espacio de 1o pixeles*/ 
+box-sizing: border-box; /*Esto asegura que el tamaño de un elemento incluya el relleno y el borde dentro de las dimensiones definidas*/
+}
+
+
+body {
+font-family: 'Inknut Antiqua', serif; /* Aplicamos la fuente Inknut Antiqua */
+/* line-height: 1.6; */
+background-color: #FEFAE0;
+}
+
+.banner1 { /* Aquí acomodamos los parametros del banner superior*/
+background-color: #5F6F52; 
+margin-bottom: -40px;
+text-align: right; /* Esto alinea el texto a la derecha */
+}
+
+header {
+display: flex; /*modelo de caja flexible (flexbox) para el elemento header. Esto permite alinear y distribuir los elementos hijos (por ejemplo, el logo y el menú de navegación) de manera más controlada y adaptable.*/
+justify-content: space-between; /*Distribuye los elementos hijos dentro del header de tal forma que haya espacio entre ellos. El primer hijo (como el logo) se alineará a la izquierda, y el último hijo (como el menú de navegación) a la derecha, dejando el espacio sobrante entre ambos.*/
+align-items: center; /* Con esto nos aseguramos de que las letras queden centradas, ni muy alto, ni muy bajo*/
+background-color: #D6B392;
+}
+
+header .logo img { /*En esta parte es super importante el "img" ya que especificamos que el estilo se aplica a la imagen*/
+width: 100px;
+margin-left: 10px;
+}
+
+nav ul { /*al agregar el "nav" especificamos que el "ul" dentro de este elemento se modifique mediante este css*/
+list-style: none; /*Eliminamos el diseño por defecto de una lista*/
+display: flex; /*Convierte el contenedor <ul> en un contenedor flexible (flex container), lo que permite su diseño vertical*/
+gap: 50px; /*Espacios entre las opciones del menú*/
+}
+
+nav ul li a { /*CSS para modificar los parametros esteticos de las secciones del menú*/
+text-decoration: none;
+color: #4b5940;
+font-size: 18px;
+}
+
+nav ul li a.active { /* Rayita debajo de la seccion en la que se encuentra actualmente el usuario (active)*/
+border-bottom: 2px solid #4b5940; /* Color y grosor de la línea */
+padding-bottom: 5px; /* Espaciado entre el texto y la línea */
+}
+
+/*------------PARTE PROPIA DE SU PAGINA-----------*/
+h1 {
+    text-align: center;
+    color: #5d6d4f;
+    margin-bottom: 30px;
+}
+.intro-text {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-style: italic;
+    font-size: 18px;
+}
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+.about-image {
+    flex: 1;
+    max-width: 50%;
+}
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.about-text {
+    flex: 1;
+    font-size: 20px;
+}
+
+/*-------Nuestro footer---------------*/
+
+footer {
+background-color: #5F6F52; /* Color de fondo basado en la imagen */
+padding: 1rem 40px; /* Cambiado a rem para mejor ajuste */
+display: flex;
+justify-content: space-between; /* Alinear logo a la izquierda y los íconos a la derecha */
+flex-wrap: wrap;
+align-items: center;
+color: white;
+}
+
+footer .footer-logo {
+display: flex;
+align-items: center;
+font-family: 'Cinzel', serif; /* Fuente estilizada similar */
+font-size: 36px; /* Ajusta el tamaño del texto */
+font-weight: bold;
+}
+
+footer .footer-logo::after {
+content: '';
+display: block;
+width: 2px;
+height: 70px;
+background-color: white;
+margin-left: 20px; /* Espacio entre texto y la línea */
+}
+
+footer .footer-icons {
+display: flex;
+gap: 20px; /* Espacio entre íconos */
+}
+
+footer .footer-icons a {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 50px;
+height: 50px;
+border: 2px solid white;
+border-radius: 50%; /* Hacer que los íconos tengan forma de círculo */
+color: white;
+font-size: 24px;
+text-decoration: none;
+transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+footer .footer-icons a:hover {
+background-color: white;
+color: #5F6F52; /* Cambiar color al fondo verde al pasar el ratón */
+}
+
+
+
+
+/* Media queries para pantallas pequeñas */
+
+@media only screen and (max-width: 768px) {
+nav ul {
+    flex-direction: column; /* Cambia el menú a vertical */
+    gap: 2vw;
+}
+
+nav ul li a {
+    font-size: 3vw; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+}
+
+.about-content {
+    flex-direction: column; /* Cambia el diseño a columna para que el texto aparezca debajo de la imagen */
+    align-items: center; /* Centra el contenido */
+}
+
+.about-image {
+    max-width: 100%; /* Asegúrate de que la imagen ocupe el 100% del contenedor */
+}
+
+.about-text {
+    font-size: 20px;
+    text-align: center; /* Centra el texto para pantallas pequeñas */
+}
+
+
+footer .footer-logo {
+    font-size: 1.5rem; /* Ajusta el tamaño del logo en el pie de página */
+}
+}

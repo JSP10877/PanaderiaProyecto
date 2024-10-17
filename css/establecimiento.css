@@ -4,6 +4,8 @@
     box-sizing: border-box; /*Esto asegura que el tamaño de un elemento incluya el relleno y el borde dentro de las dimensiones definidas*/
     }
     
+    /*____________________________--Partes del menú-____________*/
+
     body {
         font-family: 'Inknut Antiqua', serif; /* Aplicamos la fuente Inknut Antiqua */
         /* line-height: 1.6; */
@@ -11,7 +13,7 @@
         }
     
         .banner1 { /* Aquí acomodamos los parametros del banner superior*/
-        background-color: #5F6F52; 
+        background-color: #77816f; 
         margin-bottom: -40px;
         text-align: right; /* Esto alinea el texto a la derecha */
         }
@@ -44,7 +46,9 @@
         border-bottom: 2px solid #4b5940; /* Color y grosor de la línea */
         padding-bottom: 5px; /* Espaciado entre el texto y la línea */
         }
-    /*Mendez*/
+
+
+    /*-----------Parte Mendez-------------*/
 
     main {
         padding: 40px 0;
