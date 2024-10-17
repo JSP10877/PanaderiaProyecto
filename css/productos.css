@@ -104,9 +104,10 @@ h1 {
 
 footer {
     background-color: #5F6F52; /* Color de fondo basado en la imagen */
-    padding: 1px 40px;
+    padding: 1rem 40px; /* Cambiado a rem para mejor ajuste */
     display: flex;
     justify-content: space-between; /* Alinear logo a la izquierda y los íconos a la derecha */
+    flex-wrap: wrap;
     align-items: center;
     color: white;
 }
@@ -151,3 +152,31 @@ footer .footer-icons a:hover {
     background-color: white;
     color: #5F6F52; /* Cambiar color al fondo verde al pasar el ratón */
 }
+
+/* Media queries para pantallas pequeñas */
+@media only screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Cambia el menú a vertical */
+        gap: 2vw;
+    }
+    
+    nav ul li a {
+        font-size: 3vw; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+    }
+
+    /* Ajusta el layout de productos para pantallas pequeñas */
+    .products {
+        grid-template-columns: 1fr; /* Una sola columna */
+    }
+
+    .product {
+        flex-direction: column; /* Asegúrate de que los elementos dentro del producto estén en una sola columna */
+        align-items: flex-start; /* Alinea los elementos a la izquierda para un mejor ajuste visual */
+    }
+
+    .product-image {
+        margin-bottom: 10px; /* Añade margen debajo de la imagen */
+        margin-right: 0; /* Quita el margen derecho para alinear la imagen al contenido */
+    }
+}
+
