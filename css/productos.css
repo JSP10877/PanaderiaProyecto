@@ -104,7 +104,7 @@ h1 {
 
 footer {
     background-color: #5F6F52; /* Color de fondo basado en la imagen */
-    padding: 20px 40px;
+    padding: 1px 40px;
     display: flex;
     justify-content: space-between; /* Alinear logo a la izquierda y los íconos a la derecha */
     align-items: center;

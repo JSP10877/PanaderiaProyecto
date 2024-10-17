@@ -63,7 +63,7 @@ nav ul li a.active { /* Rayita debajo de la seccion en la que se encuentra actua
 .vistap .vistap_text h1 {
     margin: 0; /* Elimina márgenes innecesarios */
     white-space: nowrap; /* Evita el salto de línea en el texto */
-    font-size: 78px;
+    font-size: 6vw;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -81,7 +81,7 @@ nav ul li a.active { /* Rayita debajo de la seccion en la que se encuentra actua
 }
 
 .diferenciador h2 {
-    font-size: 32px;
+    font-size: 3vw;
     margin-bottom: 40px;
     text-transform: uppercase; /* Convertir el texto a mayúsculas */
     display: inline-block;
@@ -90,7 +90,7 @@ nav ul li a.active { /* Rayita debajo de la seccion en la que se encuentra actua
 .diferenciador h2::after {
     content: ''; /* Crea un elemento vacío después del <h2> */
     display: block; /* Hace que el pseudo-elemento sea un bloque, lo que le permite ocupar toda la línea horizontal */
-    width: 400px; /* Define el ancho de la línea, en este caso 400px */
+    width: 90%; /* Define el ancho de la línea, en este caso 400px */
     height: 3px; /* Establece la altura de la línea, lo que la convierte en una línea delgada de 3px */
     background-color: #3d3d3d; /* Asigna un color gris oscuro a la línea */
     margin: 10px auto 0; /* Añade un margen superior de 10px, luego centra la línea horizontalmente con `auto` y no añade margen en la parte inferior */
@@ -139,9 +139,10 @@ nav ul li a.active { /* Rayita debajo de la seccion en la que se encuentra actua
 
 footer {
     background-color: #5F6F52; /* Color de fondo basado en la imagen */
-    padding: 20px 40px;
+    padding: 1rem 40px; /* Cambiado a rem para mejor ajuste */
     display: flex;
     justify-content: space-between; /* Alinear logo a la izquierda y los íconos a la derecha */
+    flex-wrap: wrap;
     align-items: center;
     color: white;
 }
@@ -185,4 +186,34 @@ footer .footer-icons a {
 footer .footer-icons a:hover {
     background-color: white;
     color: #5F6F52; /* Cambiar color al fondo verde al pasar el ratón */
+}
+
+/* Media queries para pantallas pequeñas */
+
+@media only screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Cambia el menú a vertical */
+        gap: 2vw;
+    }
+    
+    nav ul li a {
+        font-size: 3vw; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+    }
+
+    .vistap .vistap_text h1 {
+        font-size: 8vw; /* Ajusta el texto principal */
+    }
+
+    .diferenciador h2 {
+        font-size: 7vw; /* Aumenta el tamaño del texto en pantallas pequeñas */
+    }
+    
+    .diferenciador h2::after {
+        width: 70%; /* Aumenta el ancho de la línea en dispositivos pequeños */
+    }
+
+
+    footer .footer-logo {
+        font-size: 1.5rem; /* Ajusta el tamaño del logo en el pie de página */
+    }
 }
