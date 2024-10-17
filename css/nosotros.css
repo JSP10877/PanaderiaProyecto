@@ -86,55 +86,91 @@
         font-size: 20px;
     }
     
-    /*Nuestro footer*/
+    /*-------Nuestro footer---------------*/
 
     footer {
-        background-color: #5F6F52; /* Color de fondo basado en la imagen */
-        padding: 1px 40px;
-        display: flex;
-        justify-content: space-between; /* Alinear logo a la izquierda y los íconos a la derecha */
-        align-items: center;
-        color: white;
+    background-color: #5F6F52; /* Color de fondo basado en la imagen */
+    padding: 1rem 40px; /* Cambiado a rem para mejor ajuste */
+    display: flex;
+    justify-content: space-between; /* Alinear logo a la izquierda y los íconos a la derecha */
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+}
+
+footer .footer-logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Cinzel', serif; /* Fuente estilizada similar */
+    font-size: 36px; /* Ajusta el tamaño del texto */
+    font-weight: bold;
+}
+
+footer .footer-logo::after {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 70px;
+    background-color: white;
+    margin-left: 20px; /* Espacio entre texto y la línea */
+}
+
+footer .footer-icons {
+    display: flex;
+    gap: 20px; /* Espacio entre íconos */
+}
+
+footer .footer-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 50%; /* Hacer que los íconos tengan forma de círculo */
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+footer .footer-icons a:hover {
+    background-color: white;
+    color: #5F6F52; /* Cambiar color al fondo verde al pasar el ratón */
+}
+
+
+
+
+/* Media queries para pantallas pequeñas */
+
+@media only screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Cambia el menú a vertical */
+        gap: 2vw;
     }
     
+    nav ul li a {
+        font-size: 3vw; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+    }
+
+    .about-content {
+        flex-direction: column; /* Cambia el diseño a columna para que el texto aparezca debajo de la imagen */
+        align-items: center; /* Centra el contenido */
+    }
+
+    .about-image {
+        max-width: 100%; /* Asegúrate de que la imagen ocupe el 100% del contenedor */
+    }
+
+    .about-text {
+        font-size: 20px;
+        text-align: center; /* Centra el texto para pantallas pequeñas */
+    }
+
+
     footer .footer-logo {
-        display: flex;
-        align-items: center;
-        font-family: 'Cinzel', serif; /* Fuente estilizada similar */
-        font-size: 36px; /* Ajusta el tamaño del texto */
-        font-weight: bold;
+        font-size: 1.5rem; /* Ajusta el tamaño del logo en el pie de página */
     }
-    
-    footer .footer-logo::after {
-        content: '';
-        display: block;
-        width: 2px;
-        height: 70px;
-        background-color: white;
-        margin-left: 20px; /* Espacio entre texto y la línea */
-    }
-    
-    footer .footer-icons {
-        display: flex;
-        gap: 20px; /* Espacio entre íconos */
-    }
-    
-    footer .footer-icons a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 50px;
-        height: 50px;
-        border: 2px solid white;
-        border-radius: 50%; /* Hacer que los íconos tengan forma de círculo */
-        color: white;
-        font-size: 24px;
-        text-decoration: none;
-        transition: background-color 0.3s ease, color 0.3s ease;
-    }
-    
-    footer .footer-icons a:hover {
-        background-color: white;
-        color: #5F6F52; /* Cambiar color al fondo verde al pasar el ratón */
-    }
-    
+}
+
