@@ -23,6 +23,31 @@ header {
     background-color: #D6B392;
 }
 
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.whatsapp-btn:hover {
+    background-color: #20b358;
+}
+
+.whatsapp-btn i {
+    font-size: 30px;
+}
 header .logo img { /*En esta parte es super importante el "img" ya que especificamos que el estilo se aplica a la imagen*/
     width: 100px;
     margin-left: 10px;
