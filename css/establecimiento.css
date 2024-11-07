@@ -79,6 +79,10 @@ border-bottom: 2px solid #4b5940; /* Color y grosor de la línea */
 padding-bottom: 5px; /* Espaciado entre el texto y la línea */
 }
 
+nav ul li a:hover{
+    color: #e5f3db; /* me interesan estos colores:#f2ffe7,   */ 
+}
+
 /*------------PARTE PROPIA DE SU PAGINA-----------*/
 .intro-text {
     text-align: center;

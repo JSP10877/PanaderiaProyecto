@@ -70,6 +70,10 @@ nav ul li a.active { /* Rayita debajo de la seccion en la que se encuentra actua
     padding-bottom: 5px; /* Espaciado entre el texto y la línea */
 }
 
+nav ul li a:hover{
+    color: #e5f3db; /* me interesan estos colores:#f2ffe7,   */ 
+}
+
 
 /*______________________________________________-En esta parte hacia abajo comienza lo mio-___________________*/
 

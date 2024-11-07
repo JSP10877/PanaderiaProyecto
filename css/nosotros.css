@@ -54,6 +54,10 @@
     padding-bottom: 5px; /* Espaciado entre el texto y la línea */
     }
 
+    nav ul li a:hover{
+        color: #e5f3db; /* me interesan estos colores:#f2ffe7,   */ 
+    }
+
     /*------------PARTE PROPIA DE SU PAGINA-----------*/
     h1 {
         text-align: center;
